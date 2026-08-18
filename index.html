@@ -1,11 +1,190 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teste</title>
+    <title>Currículo - Pedro Simon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <h1>TESTE</h1>
+
+  <body id="inicio">
+    <div class="container my-5">
+      <nav
+        class="nav bg-white p-3 rounded shadow-sm mb-4 sticky-top border border-2"
+      >
+        <div class="position-relative d-flex align-items-center w-100">
+          <div class="nav nav-pills mx-auto">
+            <a class="nav-link text-primary fw-semibold" href="#inicio">
+              Início
+            </a>
+
+            <a class="nav-link text-primary fw-semibold" href="#sobremim">
+              Sobre Mim
+            </a>
+
+            <a class="nav-link text-primary fw-semibold" href="#habilidades">
+              Habilidades
+            </a>
+
+            <a class="nav-link text-primary fw-semibold" href="#contato">
+              Contato
+            </a>
+          </div>
+
+          <button id="botaoTema" class="btn btn-dark position-absolute end-0">
+            Modo Noturno
+          </button>
+        </div>
+      </nav>
+
+      <header class="card shadow-sm mb-4" id="inicio">
+        <div class="card-body p-5">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQGxyP1Ua8aNDQ/profile-displayphoto-scale_400_400/B4DZx9oItHGUAg-/0/1771634204878?e=1788393600&v=beta&t=z5a2sJS_HP7rKIJzoNZFE3UdWXCPUROYcNRzRjW3qsk"
+                class="img-fluid rounded-circle"
+                style="max-width: 180px"
+                alt="Foto de Pedro Simon"
+              />
+            </div>
+
+            <div class="col-12 col-md-5 text-center text-md-start">
+              <h1>Pedro Simon</h1>
+
+              <p class="lead mb-0">Estudante de Engenharia de Software</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="sobremim" class="card shadow-sm mb-4">
+        <div class="card-body p-4 text-center">
+          <h2>Sobre Mim</h2>
+
+          <p class="mx-auto" style="max-width: 675px">
+            Sou Pedro Ramos Simon, estudante de Engenharia de Software na UniRV.
+            Tenho experiência como freelancer na área de design gráfico, com
+            conhecimento em ferramentas da Adobe e criação de materiais visuais.
+            Atualmente, estou aprofundando meus conhecimentos em programação e
+            desenvolvimento de software, buscando ampliar minhas habilidades
+            técnicas e construir uma base sólida na área de tecnologia.
+          </p>
+        </div>
+      </section>
+
+      <section id="habilidades" class="card shadow-sm mb-4">
+        <div class="card-body p-4">
+          <h2 class="text-center mb-4">Habilidades e Conhecimentos</h2>
+
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card habilidade-card h-100 text-center shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5">Java</h3>
+
+                  <img
+                    src="img/java.png"
+                    class="img-fluid my-3"
+                    style="max-width: 60px"
+                    alt="Ícone Java"
+                  />
+
+                  <p class="card-text">Projetos durante a faculdade</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card habilidade-card h-100 text-center shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5">PostgreSQL</h3>
+
+                  <img
+                    src="img/PostgreSQL.png"
+                    class="img-fluid my-3"
+                    style="max-width: 60px"
+                    alt="Ícone PostgreSQL"
+                  />
+
+                  <p class="card-text">
+                    Criação de Banco de Dados em projetos durante a faculdade
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card habilidade-card h-100 text-center shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5">Adobe Premiere</h3>
+
+                  <img
+                    src="img/premiere-pro.png"
+                    class="img-fluid my-3"
+                    style="max-width: 60px"
+                    alt="Ícone Adobe Premiere"
+                  />
+
+                  <p class="card-text">Utilizado para o trabalho freelancer.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card habilidade-card h-100 text-center shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5">Adobe Photoshop</h3>
+
+                  <img
+                    src="img/photoshop.png"
+                    class="img-fluid my-3"
+                    style="max-width: 60px"
+                    alt="Ícone Adobe Photoshop"
+                  />
+
+                  <p class="card-text">Utilizado para o trabalho freelancer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="card shadow-sm mb-4">
+        <div class="card-body p-4">
+          <h2>Contato</h2>
+
+          <p>
+            Email:
+            <a> pedro.simon.dev@gmail.com</a>
+          </p>
+
+          <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/pedrosimon2/" target="_blank">
+              https://www.linkedin.com/in/pedrosimon2/
+            </a>
+          </p>
+
+          <p>
+            GitHub:
+            <a href="https://github.com/PedroSimon1" target="_blank">
+              https://github.com/PedroSimon1
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <footer class="text-center py-4">
+        <p>© 2026 Pedro Simon</p>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
